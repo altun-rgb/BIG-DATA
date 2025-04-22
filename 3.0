@@ -1,0 +1,44 @@
+# 1. "rəqəmlər" adlı list yaradın
+reqemler = [5, 10, 15, 20]
+print("1:", reqemler)
+
+# 2. Uzunluğunu tapın
+print("2:", len(reqemler))
+
+# 3. 25 elementini əlavə edin
+reqemler.append(25)
+print("3:", reqemler)
+
+# 4. 2-ci indeksə 12 əlavə edin
+reqemler.insert(2, 12)
+print("4:", reqemler)
+
+# 5. 1,2,3 və 4,5,6 listlərini birləşdirin
+birlesmis = [1, 2, 3] + [4, 5, 6]
+print("5:", birlesmis)
+
+# 6. "rəqəmlər" listindən 2-ci və 3-cü elementləri seçin
+print("6:", reqemler[2:4])
+
+# 7. İlk elementi 50 ilə əvəz edin
+reqemler[0] = 50
+print("7:", reqemler)
+
+# 8. 19 elementinin olub-olmadığını yoxlayın
+print("8:", 19 in reqemler)
+
+# 9. "a", "b", "a", "c" listində "a" neçə dəfə var
+print("9:", ["a", "b", "a", "c"].count("a"))
+
+# 10. "x", "y", "x", "z" listindən "x"ləri silin
+filtered = [i for i in ["x", "y", "x", "z"] if i != "x"]
+print("10:", filtered)
+
+# 11. 7, 2, 9, 1 listini azalan sırayla sıralayın
+nums = [7, 2, 9, 1]
+nums.sort(reverse=True)
+print("11:", nums)
+
+# 12. "rəqəmlər" listindən 10-dan böyük elementləri seçin
+boyuk_10 = [i for i in reqemler if i > 10]
+print("12:", boyuk_10)
