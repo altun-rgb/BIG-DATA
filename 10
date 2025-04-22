@@ -1,0 +1,8 @@
+sayi = "42.8"
+float_sayi = float(sayi)
+print(float_sayi)
+print(type(float_sayi))
+
+int_sayi = int(float_sayi)
+print(int_sayi)
+print(type(int_sayi))
